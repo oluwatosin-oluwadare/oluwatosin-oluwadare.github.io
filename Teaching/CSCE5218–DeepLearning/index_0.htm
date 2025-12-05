@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cse.buffalo.edu/~jmeng2/index.html -->
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSCE 5218 - Deep Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/global.css">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/navigation.css">
+	<link rel="stylesheet" type="text/css" href="../../stylefiles/home.css">
+	<link rel="icon" type="image/png" href="Image/icon.png">
+	<style>a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }</style>
+	<!-- <style>a{ TEXT-DECORATION:none }</style>-->   <!-- change style for hyperlink -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<style type="text/css">
+div img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+div img:hover{
+  transform: scale(1.8);
+}
+.underlinedist{ padding-bottom:3px; border-bottom:1px solid #000} 
+</style>
+
+
+<div class="central_body">
+	
+	
+	
+    <font size="5"><center><b>CSCE 5218 – Deep Learning</b></center></font>
+
+	
+    <p style="margin-top:5px;">
+	<center>
+	<font size="4"> <b>Spring 2026</b></font> &nbsp; &nbsp; 
+	<br>
+	</center>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Basic information:</b></font> <br>
+	</p>
+	
+	<p style="text-align:justify">
+	<ul>
+		<li>
+			<font size="4"> Instructor: <a href="https://oluwadarelab.com/oluwatosin-oluwadare/" target="_blank"><font color="#0099ff">Oluwatosin Oluwadare</font></a> (Oluwatosin.Oluwadare@unt.edu)</font>
+		</li>
+		<li>
+			<font size="4"> Office: Discovery Park F209 </font>
+		</li>
+		<li>
+			<font size="4"> Office hours: Tues 10:00 am-12:00 pm or by appointment</font>
+		</li>
+		<br>
+		<li>
+			<font size="4"> Lecture time: Tu 1:00 - 2:20 pm </font>
+		</li>
+		<!--<li>
+			<font size="4"> Classroom: NTDP K110</font>
+		</li>
+		-->
+		<li>
+			<font size="4"> Syllabus: <a href=".\Deep Learning-Syllabus-Spring 2026.pdf" target="_blank"><font color="#0099ff">PDF</font></a></font>
+		</li>
+		
+		<br>
+		<li>
+			<font size="4"> TA: Minghao Li (minghaoli@my.unt.edu)</font>
+			<br>
+			<font size="4">Office Hours: <!--3:00-5:00 pm on Wed, F221 --> or by appointment</font>
+		</li>
+		<br>
+		<!--
+		<li>
+			<font size="4"> IA: Piyush Deepak Hemnani (PiyushHemnani@my.unt.edu)</font>
+			<br>
+			<font size="4"> Office Hours: 12:00-2:00 pm on Friday (via appointment)</font>
+		</li>
+		-->
+	</ul>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Course description</b></font>
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4">This course aims at covering the basics of modern deep neural networks. In specific, the first part will introduce the fundamental concepts in neural networks including network architecture, activation function, loss, optimization, gradient and initializations etc. Then, the second part will describe specific types of different deep neural networks such as convolutional neural networks (CNNs), recurrent neural networks (RNNs) and attention-based Transformer, as well as their applications in computer vision and natural language processing. In the final part we will briefly discuss some recent advanced topics in deep learning including graph neural networks, unsupervised representation learning, deep reinforcement learning, generative adversarial networks (GANs), etc. In this course, the hands-on practice of implementing deep learning algorithms (in Python) will be provided via homeworks and course project.</font>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Textbooks</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4">We will have required readings from the following textbook:</font>
+	<ul>
+	
+		<li>
+			<font size="4"> <i> Understanding Deep Learning</i>,  by Simon J.D. Prince, 2025.  <a href="https://udlbook.github.io/udlbook/" target="_blank"><font color="#0099ff">online version</font></a></font>
+		</li>
+
+	</ul>
+	
+	<font size="4">Besides, the following textbooks are useful as additional references:</font>
+	<ul>
+		<li>
+			<font size="4"> <i>Deep Learning</i>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, 2016. <a href="https://www.deeplearningbook.org/" target="_blank"><font color="#0099ff">online version</font></a></font>
+		</li>
+		
+		<li>
+			<font size="4"> <i>Dive into Deep Learning</i>, by Aston Zhang, Zack C. Lipton, Mu Li, and Alex J. Smola, 2019. <a href="https://d2l.ai/index.html" target="_blank"><font color="#0099ff">online version</font></a> <br>(A lot of examples are provided to practice deep learning.)</font>
+		</li>
+		<li>
+			<font size="4"> <i>Neural Networks and Deep Learning</i>, by Michael Nielsen, 2019. <a href="http://neuralnetworksanddeeplearning.com/" target="_blank"><font color="#0099ff">online version</font></a></font>
+		</li>
+		<li>
+			<font size="4"> <i>Introduction to Deep Learning</i>, by Eugene Charniak, 2019. <a href="https://mitpress.mit.edu/books/introduction-deep-learning" target="_blank"><font color="#0099ff">link</font></a></font>
+		</li>
+
+	</ul>
+	<font size="4">In addition to the textbooks, extra reading materials will be provided as we cover topics. Check out the course website regularly for updated reading materials.</font>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b><font color="#FF0000">Announcements</font></b></font> 
+	</p>
+	
+	<ul>
+		<!-- 
+		<li>
+			<font size="4"> <b>04/13/2023:</b> <a href="./presentation_schedule.htm" target="_blank"><font color="#0099ff">Project presentation schedule</font></a> is out.</font>
+		</li>
+		<li>
+			<font size="4"> <b>04/10/2023:</b> Paper review list 7 is out, due on 4/18.</font>
+		</li>
+		<li>
+			<font size="4"> <b>03/27/2023:</b> Paper review list 6 is out, due on 4/4.</font>
+		</li>
+		<li>
+			<font size="4"> <b>03/15/2023:</b> Paper review list 5 is out, due on 3/28.</font>
+		</li>
+		<li>
+			<font size="4"> <b>03/06/2023:</b> Paper review list 4 is out, due on 3/14.</font>
+		</li>
+		<li>
+			<font size="4"> <b>02/28/2023:</b> Paper review list 3 is out, due on 3/7.</font>
+		</li>
+		<li>
+			<font size="4"> <b>02/22/2023:</b> The project report is due on 4/20.</font>
+		</li>
+		
+		<li>
+			<font size="4"> <b>02/22/2023:</b> Project list is out. Check it <font size="4"> <a href="./course_project.htm" target="_blank"><font color="#0099ff">here</font></a></font></font>
+		</li>
+		<li>
+			<font size="4"> <b>02/09/2023:</b> Paper review list 2 is out, due on 2/26.</font>
+		</li>
+		<li>
+			<font size="4"> <b>02/09/2023:</b> Paper review list 1 is out, due on 2/19.</font>
+		</li> 
+		<li>
+			<font size="4"> <b>03/26/2023:</b> The schedule of project presention is <a href="./presentation_schedule.htm" target="_blank"><font color="#0099ff">out</font></a>.</font>
+		</li>
+		<li>
+			<font size="4"> <b>04/08/2025:</b> <a href="./presentation_schedule.htm" target="_blank"><font color="#0099ff">Project presentation schedule</font></a> is out.</font>
+		</li>
+		<li>
+			<font size="4"> <b>04/08/2025:</b> The project report is due on 4/21.</font>
+		</li>
+		<li>
+			<font size="4"> <b>03/03/2025:</b> The project proposal is due on 3/13.</font>
+		</li> 
+		-->
+		<li>
+			<font size="4"> <b>01/01/2025:</b> Course website has been launched.</font>
+		</li>
+	</ul>
+
+	
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b><font color="#FF0000">Links</font></b></font> 
+	</p>
+	
+	<ul>
+		<!--
+		<li>
+			<font size="4"> <a href="./presentation_schedule.htm" target="_blank"><font color="#0099ff">Course Project Presentation Schedule</font></a></font>
+		</li> 
+		-->
+		<li>
+			<font size="4"> <a href="./course_project.htm" target="_blank"><font color="#0099ff">Course Project</font></a></font>
+		</li>
+		
+	</ul>
+	
+	
+	
+	<HR>
+
+	<p style="margin-top:5px;">
+	<font size="4"> <b><font color="#FF0000">Paper review list</font></b></font> 
+	</p>
+	
+	
+	<font size="4"><b>Important:</b> Read the requirements (<a href="./paper_review.htm" target="_blank"><font color="#0099ff">click here</font></a>) for paper review. Here is a <a href="./FanHeng-01-Review-Henriques.pdf" target="_blank"><font color="#0099ff">review example</font></a> for your reference.</font>
+	
+	(<font size="4" color="#FF0000">Paper review lists will be gradually added.</font>) 
+
+	<p style="text-align:justify">
+	<font size="4" ><b>Paper review list 1</b> (<font size="4" color="#FF0000">due on 2/8</font>):</font>
+	<ol >
+		<li >
+			<font size="4" > A Krizhevsky, I Sutskever, and G Hinton, ImageNet Classification with Deep Convolutional Neural Networks, <i>NeurIPS</i>, 2012.</font>
+		</li>
+		<li>
+			<font size="4" > A Paszke, et al., PyTorch: An Imperative Style, High-Performance Deep Learning Library, <i>NeurIPS</i>, 2019.</font>
+		</li>
+		
+	</ol>
+	</p>
+	
+	
+	<p style="text-align:justify">
+	<font size="4" ><b>Paper review list 2</b> (<font size="4" color="#FF0000">due on 2/20</font>):</font>
+	<ol start="3">
+		<li>
+			<font size="4" > K Simonyan and A Zisserman, Very Deep Convolutional Networks for Large-Scale Image Recognition, <i>ICLR</i>, 2015.</font>
+		</li>
+		<li>
+			<font size="4" > K. He, X. Zhang, S. Ren, and J. Sun, Deep Residual Learning for Image Recognition, <i>CVPR</i>, 2016.</font>
+		</li>
+		
+	</ol>
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4" ><b>Paper review list 3</b> (<font size="4" color="#FF0000">due on 3/1</font>):</font>
+	<ol start="5">
+		<li>
+			<font size="4" > R. Girshick, J. Donahue, T. Darrell, and J. Malik, Rich feature hierarchies for accurate object detection and semantic segmentation, <i>CVPR</i>, 2014.</font>
+		</li>
+		<li>
+			<font size="4" > R. Girshick, Fast R-CNN, <i>ICCV</i>, 2015.</font>
+		</li>
+		
+	</ol>
+	</p>
+
+	<p style="text-align:justify">
+		<font size="4" ><b>Paper review list 4</b> (<font size="4" color="#FF0000">due on 3/10</font>):</font>
+		<ol start="7">
+			<li>
+				<font size="4" > S. Ren, K. He, R. Girshick, and J. Sun, Faster R-CNN: Towards real-time object detection with region proposal networks, <i>NIPS</i>, 2015.</font>
+			</li>
+			<li>
+				<font size="4" > J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, You only look once: Unified, real-time object detection, <i>CVPR</i>, 2016.</font>
+			</li>
+			<li>
+				<font size="4" > J. Long, E. Shelhamer, and T. Darrell, Fully Convolutional Networks for Semantic Segmentation, <i>CVPR</i>, 2015.</font>
+			</li>
+		</ol>
+		</p>
+	
+	
+	
+
+    
+	<p style="text-align:justify">
+	<font size="4" ><b>Paper review list 5</b> (<font size="4" color="#FF0000">due on 3/28</font>):</font>
+	<ol start="10">
+		<li>
+			<font size="4" > J. Chung, C. Gulcehre, K. Cho, and Y. Bengio, Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modelling, <i>NIPS Workshop</i>, 2014.</font>
+		</li>
+		<li>
+			<font size="4" > J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, K. Saenko, and T. Darrell, Long-term recurrent convolutional networks for visual recognition and description, <i>CVPR</i>, 2015.</font>
+		</li>
+	</ol>
+	</p>
+
+	
+	<p style="text-align:justify">
+	<font size="4" ><b>Paper review list 6</b> (<font size="4" color="#FF0000">due on 4/11</font>):</font>
+	<ol start="12">
+		<li>
+			<font size="4" > D. Bahdanau, K. Cho, and Y. Bengio, Neural machine translation by jointly learning to align and translate, <i>ICLR</i>, 2015.</font>
+		</li>
+		<li>
+			<font size="4" > A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. Gomez, Ł. Kaiser, and I. Polosukhin, Attention is all you need, <i>NIPS</i>, 2017.</font>
+		</li>
+		<li>
+			<font size="4" > A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby, An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, <i>ICLR</i>, 2021.</font>
+		</li>
+	</ol>
+	</p>
+	
+	
+	<HR>
+
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Schedule and class notes (<font color="#FF0000">being updated</font>)</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<table border = "0" cellspacing="5px">
+		<tr>
+			<td width=100 style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Date</b> </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Lecture</b> </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Reading</b> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Note</b> </font></td>
+		</tr> 
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 1</b> <br>1/14 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<b>Introduction</b> </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>-</b> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 1/16 </font></td>
+			<td width=500  style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Machine learning overview</b> </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeffFB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 1-5 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 2</b> <br> 1/21 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<b>Machine learning overview (cont)</b> </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 1-5 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  1/23 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>Neural network basics-1</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 4.2, 4.3, 6 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  <b>Week 3</b> <br> 1/28 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>Neural network basics-2</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 4.2, 4.3, 6 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 1/30 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>Deep neural network training-1</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 7, 8, 11 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 4</b> <br> 2/4 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>PyTorch Tutorial</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 7, 8, 11 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 2/6 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>Deep neural network training-2</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 7, 8, 11 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 5</b> <br> 2/11 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4"><b>Deep neural network training-3</b>  </font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 7, 8, 11 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  2/13 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<b>Convolutional Neural Networks (CNNs)</b>
+					<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4"> Convolution and Pooling </font>
+					</li>
+					</ul>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 9 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"><b>Week 6</b> <br> 2/18 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+					<font size="4"> Convolution and Pooling (cont.) </font>
+				</li>
+				</ul>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 9 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 2/20 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+					<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> CNN Architectures and Applications </font>
+						</li>
+					</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 9 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> - </font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 7</b> <br> 2/25 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+					<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4"> CNN Architectures and Applications (cont.) </font>
+					</li>
+					</ul>
+				
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 10 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 2/27 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+				<font size="4"> 
+					<b>Recurrent Neural Networks (RNNs)</b>
+						<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> Basics and Architecture </font>
+						</li>
+						</ul>
+					
+				</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 10 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 8</b> <br> 3/4 <br> 3/6 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<b>Project Proposal Preparation</b>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 3/11-3/13   </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<font size="4" color="#FF0000"><b>Spring Break</b> (no classes)</font>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <font size="4" color="#FF0000"> 
+				Project proposal due to 3/13
+			</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 3/18 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+				<font size="4"> 
+						<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> Basics and Architecture (cont.) </font>
+						</li>
+						</ul>
+					
+				</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 10 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 3/20 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+				<font size="4"> 
+						<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> Applications </font>
+						</li>
+						</ul>
+					
+				</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Deep Learning Ch 10 </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 3/25 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+				<font size="4"> 
+					<b>Transformers</b>
+					<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> Background</font>
+						</li>
+						<li>
+							<font size="4"> Self- and Cross-attention</font>
+						</li>
+					</ul>
+					
+				</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href="https://proceedings.neurips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf" target="_blank"><font color="#0099ff">Ref 1</font></a>, <a href="https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" target="_blank"><font color="#0099ff">Ref 2</font></a>, <a href="https://aclanthology.org/N19-1423.pdf" target="_blank"><font color="#0099ff">Ref 3</font></a>, <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank"><font color="#0099ff">Ref 4</font></a> (a blog), <a href="https://openreview.net/pdf?id=YicbFdNTTy" target="_blank"><font color="#0099ff">Ref 5</font></a> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 3/27 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+					<ul style="margin-top:5px;margin-bottom:5px;">
+						<li>
+							<font size="4"> Self- and Cross-attention (cont.)</font>
+						</li>
+						<li>
+							<font size="4"> Applications beyong language</font>
+						</li>
+					</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href="https://proceedings.neurips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf" target="_blank"><font color="#0099ff">Ref 1</font></a>, <a href="https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" target="_blank"><font color="#0099ff">Ref 2</font></a>, <a href="https://aclanthology.org/N19-1423.pdf" target="_blank"><font color="#0099ff">Ref 3</font></a>, <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank"><font color="#0099ff">Ref 4</font></a> (a blog), <a href="https://openreview.net/pdf?id=YicbFdNTTy" target="_blank"><font color="#0099ff">Ref 5</font></a> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 4/1 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<b>Advanced Topics</b>
+				<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4"> Graph Convolutional Networks</font>
+					</li>
+					<li>
+						<font size="4"> Self-supervised Learning</font>
+					</li>
+				</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href="https://tkipf.github.io/graph-convolutional-networks/" target="_blank"><font color="#0099ff">Ref 1</font></a>, <a href="https://openaccess.thecvf.com/content_iccv_2015/papers/Doersch_Unsupervised_Visual_Representation_ICCV_2015_paper.pdf" target="_blank"><font color="#0099ff">Ref 2</font></a> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>4/3 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4"> Reinforcement Learning</font>
+					</li>
+				</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href="https://papers.nips.cc/paper/2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html" target="_blank"><font color="#0099ff">Ref 1</font></a>, <a href="https://proceedings.neurips.cc/paper/2016/file/a486cd07e4ac3d270571622f4f316ec5-Paper.pdf" target="_blank"><font color="#0099ff">Ref 2</font></a>, <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Lisa_Anne_Hendricks_Women_also_Snowboard_ECCV_2018_paper.pdf" target="_blank"><font color="#0099ff">Ref 3</font></a> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 4/8 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4">Generation</font>
+					</li>
+					<li>
+						<font size="4"> Generative Adversarial Networks</font>
+					</li>
+				</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href="http://karpathy.github.io/2016/05/31/rl/" target="_blank"><font color="#0099ff">Ref 1</font></a> </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 4/10 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<ul style="margin-top:5px;margin-bottom:5px;">
+					<li>
+						<font size="4"> Bias and Ethics (optional)</font>
+					</li>
+				</ul>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 4/15-4/29 </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+			<font size="4"> 
+				<b>Project Presentation</b>
+			</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> <font size="4" color="#FF0000"> 
+				Project report due to 4/21
+			</font></font> </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <font size="4" color="#FF0000"> 
+				<b>Final Exam</b>
+		</font> </font></td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+				<font size="4" color="#FF0000"> 
+					Date: 10:00 am-12:00 pm on May 8, at K110
+				</font>
+			</td>
+			<td width=500 style='width:480.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+			<td width=200 style='width:180.0pt;background:#eeeeff;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" > <font size="4"> -</font> </font></td>
+		</tr>
+
+
+	<!-- 
+
+		
+
+
+	</table>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Grading policy</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4">Grading will be based on the following components:</font>
+	<ul>
+		<li>
+			<font size="4"> Attendance: 5%</font>
+		</li>
+		<li>
+			<font size="4"> Paper review: 30%</font>
+		</li>
+		<li>
+			<font size="4"> Course project: 50% (15% for proposal, 25% for final report, and 10% for presentation)</font>
+		</li>
+		<li>
+			<font size="4"> Final exam: 15%</font>
+		</li>
+	</ul>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Resource and Acknowledgment</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4">This course is inspired by the following courses:</font>
+	<ul>
+		<li>
+			<font size="4"> <a href="https://people.cs.pitt.edu/~kovashka/cs1678_fa21/" target="_blank"><font color="#0099ff">Introduction to Deep Learning</font></a> by Adriana Kovashka, University of Pittsburgh, Fall 2021</font>
+		</li>
+		<li>
+			<font size="4"> <a href="https://www.cc.gatech.edu/classes/AY2022/cs7643_fall/" target="_blank"><font color="#0099ff">Deep Learning</font></a> by Dhruv Batra, Georgia Tech, Fall 2021</font>
+		</li>
+		<li>
+			<font size="4"> <a href="http://cs231n.stanford.edu/" target="_blank"><font color="#0099ff">Convolutional Neural Networks for Visual Recognition</font></a> by Fei-Fei Li, Justin Johnson, and Serena Young, some content by Andrej Karpathy, Stanford University, Spring 2021</font>
+		</li>
+		<li>
+			<font size="4"> <a href="http://web.stanford.edu/class/cs224n/" target="_blank"><font color="#0099ff">Natural Language Processing with Deep Learning</font></a> by Chris Manning, Abigail See, based on an earlier course by Richard Socher, Stanford University, Winter 2019</font>
+		</li>
+		<li>
+			<font size="4"> <a href="http://deeplearning.cs.cmu.edu/" target="_blank"><font color="#0099ff">Introduction to Deep Learning</font></a> by Bhiksha Raj, Carnegie Mellon University, Fall 2019</font>
+		</li>
+		<li>
+			<font size="4"> <a href="https://www.cs.utexas.edu/~grauman/courses/spring2011/index.html" target="_blank"><font color="#0099ff">Computer Vision</font></a> by Kristen Grauman, UT Austin, Spring 2011</font>
+		</li>
+		<li>
+			<font size="4"> Introduction to Machine Learning by Rebecca Hwa, University of Pittsburgh, Fall 2015</font>
+		</li>
+		<li>
+			<font size="4"> <a href="https://filebox.ece.vt.edu/~s15ece5984/" target="_blank"><font color="#0099ff">Introduction to Machine Learning</font></a> by Dhruv Batra, Virginia Tech, Spring 2015</font>
+		</li>
+		<li>
+			<font size="4"> <a href="http://www-edlab.cs.umass.edu/~smaji/cmpsci689/" target="_blank"><font color="#0099ff">Machine Learning</font></a> by Subhransu Maji, UMass Amhrest, Spring 2015</font>
+		</li>
+		<li>
+			<font size="4"> <a href="http://cs.brown.edu/courses/csci1420/" target="_blank"><font color="#0099ff">Machine Learning</font></a> by Erik Sudderth, Brown University, Fall 2015</font>
+		</li>
+		<li>
+			<font size="4"> <a href="https://courses.engr.illinois.edu/cs543/sp2015/" target="_blank"><font color="#0099ff">Computer Vision</font></a> by Derek Hoiem, UIUC, Spring 2015</font>
+		</li>
+		<li>
+			<font size="4"> <a href="https://www.cs.utexas.edu/~mooney/cs388/" target="_blank"><font color="#0099ff">Natural Language Processing</font></a> Ray Mooney, UT Austin, Spring 2018</font>
+		</li>
+	</ul>
+	</p>
+	
+	<HR>
+	
+</div>
+
+</body></html>
