@@ -11,43 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../stylefiles/navigation.css">
 	<link rel="stylesheet" type="text/css" href="../../stylefiles/home.css">
 	<link rel="icon" type="image/png" href="Image/icon.png">
-	
-	    <style>
-	    
-	    a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f7f7ff;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #ffffff;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px 10px;
-            vertical-align: top;
-        }
-        th {
-            background-color: #e6e6f5;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #fafafa;
-        }
-        .small-note {
-            font-size: 0.9rem;
-            color: #555;
-            margin-bottom: 10px;
-        }
-    </style>
+	<link rel="stylesheet" href="styles.css"> 
 	
 </head>
 
@@ -224,7 +188,7 @@ div img:hover{
 		</li> 
 		-->
 		<li>
-			<font size="4"> <b>01/01/2025:</b> Course website has been launched.</font>
+			<font size="4"> <b>01/01/2026:</b> Course website has been launched.</font>
 		</li>
 	</ul>
 
@@ -259,103 +223,232 @@ div img:hover{
 	
 	(<font size="4" color="#FF0000">Paper review lists will be gradually added.</font>) 
 
-	<p style="text-align:justify">
-	<font size="4" ><b>Paper review list 1</b> (<font size="4" color="#FF0000">due on 2/8</font>):</font>
-	<ol >
-		<li >
-			<font size="4" > A Krizhevsky, I Sutskever, and G Hinton, ImageNet Classification with Deep Convolutional Neural Networks, <i>NeurIPS</i>, 2012.
-		<li>
-			<font size="4" > A Paszke, et al., PyTorch: An Imperative Style, High-Performance Deep Learning Library, <i>NeurIPS</i>, 2019.</font>
-		</li>
-		
-	</ol>
-	</p>
+	<table border="1" cellspacing="0" cellpadding="6" style="border-collapse:collapse; width:100%; font-size:16px; line-height:1.35;">
+	  <thead>
+		<tr style="background:#f2f2f2;">
+		  <th style="width:40px;">#</th>
+		  <th style="width:100px;">Due Date</th>
+		  <th style="width:220px;">Theme</th>
+		  <th> Novel Representative Papers for each theme </th>
+		</tr>
+	  </thead>
 	
+	  <tbody>
 	
-	<p style="text-align:justify">
-	<font size="4" ><b>Paper review list 2</b> (<font size="4" color="#FF0000">due on 2/20</font>):</font>
-	<ol start="3">
-		<li>
-			<font size="4" > K Simonyan and A Zisserman, Very Deep Convolutional Networks for Large-Scale Image Recognition, <i>ICLR</i>, 2015.</font>
-		</li>
-		<li>
-			<font size="4" > K. He, X. Zhang, S. Ren, and J. Sun, Deep Residual Learning for Image Recognition, <i>CVPR</i>, 2016.</font>
-		</li>
-		
-	</ol>
-	</p>
+		<!-- Papers 1–3 -->
+		<tr>
+		  <td><b>1</b></td>
+		  <td>Feb 6</td>
+		  <td rowspan="3">Foundations of Modern Deep Learning</td>
+		  <td>
+			A. Krizhevsky, I. Sutskever, and G. E. Hinton, 
+			"ImageNet classification with deep convolutional neural networks,"
+			in <i>Proc. NeurIPS</i>, 2012.
+		  </td>
+		</tr>
 	
-	<p style="text-align:justify">
-	<font size="4" ><b>Paper review list 3</b> (<font size="4" color="#FF0000">due on 3/1</font>):</font>
-	<ol start="5">
-		<li>
-			<font size="4" > R. Girshick, J. Donahue, T. Darrell, and J. Malik, Rich feature hierarchies for accurate object detection and semantic segmentation, <i>CVPR</i>, 2014.</font>
-		</li>
-		<li>
-			<font size="4" > R. Girshick, Fast R-CNN, <i>ICCV</i>, 2015.</font>
-		</li>
-		
-	</ol>
-	</p>
+		<tr>
+		  <td><b>2</b></td>
+		  <td></td>
+		  <td>
+			A. Paszke <i>et al.</i>, 
+			"PyTorch: An imperative style, high-performance deep learning library,"
+			in <i>Proc. NeurIPS</i>, 2019.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>3</b></td>
+		  <td></td>
+		  <td>
+			K. Simonyan and A. Zisserman, 
+			"Very deep convolutional networks for large-scale image recognition,"
+			in <i>Proc. ICLR</i>, 2015.
+		  </td>
+		</tr>
+	
+	   <script> /***
+		<!-- Papers 4–6 -->
+		<tr>
+		  <td><b>4</b></td>
+		  <td>Feb 20</td>
+		  <td rowspan="3">Deep Architectures & Early Vision Advances</td>
+		  <td>
+			K. He, X. Zhang, S. Ren, and J. Sun,
+			"Deep residual learning for image recognition,"
+			in <i>Proc. CVPR</i>, 2016.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>5</b></td>
+		  <td></td>
+		  <td>
+			R. Girshick, J. Donahue, T. Darrell, and J. Malik,
+			"Rich feature hierarchies for accurate object detection and semantic segmentation,"
+			in <i>Proc. CVPR</i>, 2014.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>6</b></td>
+		  <td></td>
+		  <td>
+			R. Girshick,
+			"Fast R-CNN,"
+			in <i>Proc. ICCV</i>, 2015.
+		  </td>
+		</tr>
+	
+		<!-- Papers 7–9 -->
+		<tr>
+		  <td><b>7</b></td>
+		  <td>Mar 6</td>
+		  <td rowspan="3">Object Detection & Dense Prediction</td>
+		  <td>
+			S. Ren, K. He, R. Girshick, and J. Sun,
+			"Faster R-CNN: Towards real-time object detection with region proposal networks,"
+			in <i>Proc. NeurIPS</i>, 2015.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>8</b></td>
+		  <td></td>
+		  <td>
+			J. Redmon, S. Divvala, R. Girshick, and A. Farhadi,
+			"You only look once: Unified, real-time object detection,"
+			in <i>Proc. CVPR</i>, 2016.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>9</b></td>
+		  <td></td>
+		  <td>
+			J. Long, E. Shelhamer, and T. Darrell,
+			"Fully convolutional networks for semantic segmentation,"
+			in <i>Proc. CVPR</i>, 2015.
+		  </td>
+		</tr>
+	
+		<!-- Papers 10–12 -->
+		<tr>
+		  <td><b>10</b></td>
+		  <td>Mar 20</td>
+		  <td rowspan="3">Sequence Models & Attention Origins</td>
+		  <td>
+			J. Chung, C. Gulcehre, K. Cho, and Y. Bengio,
+			"Empirical evaluation of gated recurrent neural networks on sequence modeling,"
+			in <i>Proc. NeurIPS Workshop</i>, 2014.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>11</b></td>
+		  <td></td>
+		  <td>
+			J. Donahue <i>et al.</i>,
+			"Long-term recurrent convolutional networks for visual recognition and description,"
+			in <i>Proc. CVPR</i>, 2015.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>12</b></td>
+		  <td></td>
+		  <td>
+			D. Bahdanau, K. Cho, and Y. Bengio,
+			"Neural machine translation by jointly learning to align and translate,"
+			in <i>Proc. ICLR</i>, 2015.
+		  </td>
+		</tr>
+	
+		<!-- Papers 13–15 -->
+		<tr>
+		  <td><b>13</b></td>
+		  <td>Apr. 3</td>
+		  <td rowspan="3">Transformers & Vision Transformers</td>
+		  <td>
+			A. Vaswani <i>et al.</i>,
+			"Attention is all you need,"
+			in <i>Proc. NeurIPS</i>, 2017.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>14</b></td>
+		  <td></td>
+		  <td>
+			A. Dosovitskiy <i>et al.</i>,
+			"An image is worth 16×16 words: Transformers for image recognition at scale,"
+			in <i>Proc. ICLR</i>, 2021.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>15</b></td>
+		  <td></td>
+		  <td>
+			Ł. Kaiser, O. Nachum, A. Roy, and S. Bengio,
+			"One model to learn them all,"
+			in <i>Proc. ICML</i>, 2017.
+		  </td>
+		</tr>
+	
+		<!-- Papers 16–18 -->
+		<tr>
+		  <td><b>16</b></td>
+		  <td>Apr 17</td>
+		  <td rowspan="3">Modern Generative Deep Learning</td>
+		  <td>
+			I. J. Goodfellow <i>et al.</i>, 
+			"Generative adversarial nets,"
+			in <i>Proc. NeurIPS</i>, 2014.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>17</b></td>
+		  <td></td>
+		  <td>
+			J. Ho, A. Jain, and P. Abbeel,
+			"Denoising diffusion probabilistic models,"
+			in <i>Proc. NeurIPS</i>, 2020.
+		  </td>
+		</tr>
+	
+		<tr>
+		  <td><b>18</b></td>
+		  <td></td>
+		  <td>
+			P. Dhariwal and A. Nichol,
+			"Diffusion models beat GANs on image synthesis,"
+			in <i>Proc. NeurIPS</i>, 2021.
+		  </td>
+		</tr>
+	***/ </script>
+	  </tbody>
+	</table>
 
-	<p style="text-align:justify">
-		<font size="4" ><b>Paper review list 4</b> (<font size="4" color="#FF0000">due on 3/10</font>):</font>
-		<ol start="7">
-			<li>
-				<font size="4" > S. Ren, K. He, R. Girshick, and J. Sun, Faster R-CNN: Towards real-time object detection with region proposal networks, <i>NIPS</i>, 2015.</font>
-			</li>
-			<li>
-				<font size="4" > J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, You only look once: Unified, real-time object detection, <i>CVPR</i>, 2016.</font>
-			</li>
-			<li>
-				<font size="4" > J. Long, E. Shelhamer, and T. Darrell, Fully Convolutional Networks for Semantic Segmentation, <i>CVPR</i>, 2015.</font>
-			</li>
-		</ol>
-		</p>
-	
-	
-	
-
-    
-	<p style="text-align:justify">
-	<font size="4" ><b>Paper review list 5</b> (<font size="4" color="#FF0000">due on 3/28</font>):</font>
-	<ol start="10">
-		<li>
-			<font size="4" > J. Chung, C. Gulcehre, K. Cho, and Y. Bengio, Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modelling, <i>NIPS Workshop</i>, 2014.</font>
-		</li>
-		<li>
-			<font size="4" > J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, K. Saenko, and T. Darrell, Long-term recurrent convolutional networks for visual recognition and description, <i>CVPR</i>, 2015.</font>
-		</li>
-	</ol>
-	</p>
-
-	
-	<p style="text-align:justify">
-	<font size="4" ><b>Paper review list 6</b> (<font size="4" color="#FF0000">due on 4/11</font>):</font>
-	<ol start="12">
-		<li>
-			<font size="4" > D. Bahdanau, K. Cho, and Y. Bengio, Neural machine translation by jointly learning to align and translate, <i>ICLR</i>, 2015.</font>
-		</li>
-		<li>
-			<font size="4" > A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. Gomez, Ł. Kaiser, and I. Polosukhin, Attention is all you need, <i>NIPS</i>, 2017.</font>
-		</li>
-		<li>
-			<font size="4" > A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby, An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, <i>ICLR</i>, 2021.</font>
-		</li>
-	</ol>
-	</p>
 	
 	
 	<HR>
 
 
-<font size="4"> <b>Note: (<font color="#FF0000">Schedule will be updated as needed through the semester to accomodate different factors </font>)</b></font> 
 <h1>Deep Learning Course Schedule</h1>
 <p class="small-note">
-    Edit the Date and Note columns as needed. Each row corresponds to one week of class.
+Schedule will be updated as needed by instructor to accomodate student learning.
 </p>
 
 <table>
+
+    <colgroup>
+        <col style="width:12%;">  <!-- Date -->
+        <col style="width:33%;">  <!-- Lecture -->
+        <col style="width:35%;">  <!-- Reading -->
+        <col style="width:20%;">  <!-- Note -->
+    </colgroup>
     <thead>
         <tr>
             <th>Date</th>
@@ -365,173 +458,165 @@ div img:hover{
         </tr>
     </thead>
     <tbody>
+            <!-- Week 1 -->
+        <tr>
+           <td colspan="4" style="text-align:left;"><b><font size="4" color="#0000FF">Weeks 1–6: Foundations + Basic Neural Networks</b></font></td>
+            
+        </tr>
+    
         <!-- Week 1 -->
         <tr>
-            <td><!-- e.g. Jan 14 --></td>
-            <td>Introduction to the course, overview of deep learning</td>
+            <td>Jan. 13 </td>
+            <td><b>Introduction to the course, overview of deep learning</td>
             <td>Chapter 1: Introduction</td>
             <td></td>
         </tr>
 
         <!-- Week 2 -->
         <tr>
-            <td></td>
-            <td>Supervised learning</td>
+            <td>Jan. 20</td>
+            <td><b>Supervised learning</td>
             <td>Chapter 2: Supervised learning</td>
             <td></td>
         </tr>
 
         <!-- Week 3 -->
         <tr>
-            <td></td>
-            <td>Shallow neural networks</td>
+            <td>Jan. 27</td>
+            <td><b>Shallow neural networks (SNN)</td>
             <td>Chapter 3: Shallow neural networks</td>
             <td></td>
         </tr>
 
         <!-- Week 4 -->
         <tr>
-            <td></td>
-            <td>Deep neural networks</td>
+            <td>Feb. 3</td>
+            <td><b> Deep neural networks</td>
             <td>Chapter 4: Deep neural networks</td>
             <td></td>
         </tr>
 
         <!-- Week 5 -->
         <tr>
-            <td></td>
-            <td>Loss functions</td>
-            <td>Chapter 5: Loss functions</td>
+            <td>Feb. 10</td>
+            <td><b>Loss functions + Optimization: </b> Fitting Models (SGD, Momentum, Adam)</td>
+            <td>Chapter 5: Loss functions + Chapter 6: Fitting models</td>
             <td></td>
         </tr>
 
         <!-- Week 6 -->
         <tr>
-            <td></td>
-            <td>Fitting models and optimization</td>
-            <td>Chapter 6: Fitting models</td>
+            <td>Feb. 17</td>
+            <td><b> Training Deep Networks: </b> Gradients, backprop, initialization, optimization, evaluation</td>
+            <td>Chapter 7: Gradients and initialization + Chapter 8: Measuring performance</td>
             <td></td>
         </tr>
+        
+        
+		<tr>
+			<td colspan="4" style="text-align:left;"><b><font size="4" color="#0000FF">Weeks 7–13: Modern Architectures (CNN → ResNet → RNN → Transformers → GNN → Generative Models)</b></font></td>
+		</tr>
+
 
         <!-- Week 7 -->
         <tr>
-            <td></td>
-            <td>Gradients and initialization</td>
-            <td>Chapter 7: Gradients and initialization</td>
+            <td>Feb. 24</td>
+            <td><b> Convolutional Neural Networks </b>(CNNs Part 1)</td>
+            <td> Chapter 10: Convolutional networks (10.1-10.3)</td>
             <td></td>
         </tr>
 
         <!-- Week 8 -->
         <tr>
-            <td></td>
-            <td>Measuring performance</td>
-            <td>Chapter 8: Measuring performance</td>
+            <td>Mar. 3</td>
+            <td><b>CNNs Part 2 </b>(Downsampling, Upsampling, Applications) + Regularization </td>
+            <td> Chapter 10: Convolutional networks (10.1-10.3) + Chapter 9: Regularization (9.1 - 9.2)</td>
             <td></td>
         </tr>
 
+
         <!-- Week 9 -->
         <tr>
+            <td>March 9 - 15, 2026</td>
+            <td><b><b> <font size="4" color="#FF0000">Spring break (No Class)</font></td>
             <td></td>
-            <td>Regularization</td>
-            <td>Chapter 9: Regularization</td>
             <td></td>
         </tr>
 
         <!-- Week 10 -->
         <tr>
-            <td></td>
-            <td>Convolutional networks</td>
-            <td>Chapter 10: Convolutional networks</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 11 -->
-        <tr>
-            <td></td>
-            <td>Residual networks</td>
+            <td>Mar. 17</td>
+            <td><b>Residual Networks (ResNets)</td>
             <td>Chapter 11: Residual networks</td>
             <td></td>
         </tr>
 
+        
+    	 <!-- Week 11 -->
+        <tr>
+            <td>Mar. 24</td>
+            <td><b>Recurrent Neural Networks (RNNs)</b> – sequence modeling, vanishing gradients, LSTM/GRU intro.</td>
+            <td>Deep Learning by <a href="https://www.deeplearningbook.org/contents/rnn.html" target="_blank"> <i>Goodfellow et al : Ch 10</i> </a></td>
+            <td></td>
+        </tr>
+        
         <!-- Week 12 -->
         <tr>
-            <td></td>
-            <td>Transformers</td>
+            <td>Mar. 31</td>
+            <td><b>  Transformers </b> – self-attention, encoder/decoder, applications</td>
             <td>Chapter 12: Transformers</td>
             <td></td>
         </tr>
-
-        <!-- Week 13 -->
+        
+        
+		<!-- Week 14 -->
+		<tr>
+			<td>Apr. 14</td>
+			<td><b>Advanced Topic: </b> Graph Neural Networks</td>
+			<td>Chapter 13: Graph neural networks</td>
+			<td></td>
+		</tr>
+		
+		<!-- Week 15 -->
+		<tr>
+			<td>Apr. 21</td>
+			<td><b>Advanced Topic: </b> Diffusion Models – forward & reverse process</td>
+			<td>Chapter 18: Diffusion models</td>
+			<td></td>
+		</tr>
+		
+		<!-- Week 16 -->
+		<tr>
+			<td>Apr. 28</td>
+			<td> (Tentative) Why Deep Learning Works, Ethics + Course Wrap-Up </b></td>
+			<td>Chapter 20: Why deep learning works + Chapter 21: Deep learning and ethics</td>
+			<td></td>
+		</tr>
+		
+		<!-- Week 17 -->
         <tr>
+            <td>May 4 - 8</td>
+            <td><b> Finals Week </b></td>
             <td></td>
-            <td>Graph neural networks</td>
-            <td>Chapter 13: Graph neural networks</td>
+            <td> <font size="4" color="#FF0000">Project Report Due May 5</font></td>
+        </tr>
+       
+        <!--   
+        <tr>
+            <td>Apr. 28</td>
+            <td>Deep learning and ethics</td>
+            <td>Chapter 21: Deep learning and ethics</td>
             <td></td>
         </tr>
-
-        <!-- Week 14 -->
-        <tr>
-            <td></td>
-            <td>Unsupervised learning</td>
-            <td>Chapter 14: Unsupervised learning</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 15 -->
-        <tr>
-            <td></td>
-            <td>Generative adversarial networks</td>
-            <td>Chapter 15: Generative adversarial networks</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 16 -->
-        <tr>
-            <td></td>
-            <td>Normalizing flows</td>
-            <td>Chapter 16: Normalizing flows</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 17 -->
-        <tr>
-            <td></td>
-            <td>Variational autoencoders</td>
-            <td>Chapter 17: Variational autoencoders</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 18 -->
-        <tr>
-            <td></td>
-            <td>Diffusion models</td>
-            <td>Chapter 18: Diffusion models</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 19 -->
-        <tr>
-            <td></td>
-            <td>Reinforcement learning</td>
-            <td>Chapter 19: Reinforcement learning</td>
-            <td></td>
-        </tr>
-
-        <!-- Week 20 -->
         <tr>
             <td></td>
             <td>Why does deep learning work?</td>
             <td>Chapter 20: Why does deep learning work?</td>
             <td></td>
         </tr>
-
-        <!-- Week 21 -->
-        <tr>
-            <td></td>
-            <td>Deep learning and ethics</td>
-            <td>Chapter 21: Deep learning and ethics</td>
-            <td></td>
-        </tr>
+        -->
+        
+        
     </tbody>
 </table>
 
